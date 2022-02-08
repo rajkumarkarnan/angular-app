@@ -1,0 +1,22 @@
+/* .admin-header{
+    padding-left: 75px;
+} */
+
+
+.icon_img {
+    width: 28px;
+    height: 29px;
+    background: #fff;
+    color: #000;
+    border-radius: 50%;
+    /* overflow: auto; */
+    border: 1px solid #000;
+  }
+
+.dropdown-toggle::after {
+    content: none;
+}
+.userName{
+    font-weight: bold;
+    font-size: 15px;
+}

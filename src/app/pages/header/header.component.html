@@ -1,0 +1,23 @@
+<div class="admin-header">
+
+    <a routerLink="/" style="margin-left: 5px;"><img style="border-radius: 50%; " height="40" width="60" src="assets/img/csscorp.jpg" alt="csscorp"></a>  
+
+    <button class="btn btn-light btn-lg toggleBtn" (click)="toggle()" style="margin-left: 17px;">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="float-right">
+
+        <div class="dropdown">
+            <a href="#" class="btn btn-secondary dropdown-toggle icon_img" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="userName" *ngIf="UserName">{{ UserName }}</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" routerLink="home"><span class="glyphicon glyphicon-user"></span><span class="ml-3">User Info</span></a>
+              <a class="dropdown-item" (click)="logout()"><span class="glyphicon glyphicon-log-out"></span><span class="ml-3">Logout</span></a>
+            </div>
+          </div>
+    </div>
+
+</div>
+
